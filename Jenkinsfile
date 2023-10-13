@@ -25,7 +25,7 @@ pipeline {
         stage('Run Unit Tests') {
             steps {
                 
-                sh 'running unut testing'
+                sh 'running unit testing'
             }
         }
     }
