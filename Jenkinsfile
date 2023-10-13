@@ -25,7 +25,6 @@ pipeline {
                 sh 'running unit tests with python code'
             }
         }
-    }
         stage('Build Docker Image') {
             steps {
                 script {
@@ -36,5 +35,5 @@ pipeline {
                 }
             }
        }
-
+    }
 }
