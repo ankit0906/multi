@@ -29,10 +29,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    // Build the Docker image
                     def dockerImage = docker.build(env.DOCKER_IMAGE, "--file ${env.DOCKERFILE} .")
 
-                    // Tag the image (optional)
                     dockerImage.tag("${env.DOCKER_IMAGE}:latest")
 
                 }
