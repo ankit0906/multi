@@ -22,9 +22,9 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    def dockerImage = docker.build(env.DOCKER_IMAGE, "--file ${env.DOCKERFILE} .")
+                       docker.build(env.DOCKER_IMAGE, "--file ${env.DOCKERFILE} .")
 
-                    dockerImage.tag("${env.DOCKER_IMAGE}:latest")
+                       dockerImage.tag("${env.DOCKER_IMAGE}:latest")
 
                 }
             }
