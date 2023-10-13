@@ -37,3 +37,9 @@ pipeline {
 
                     // Tag the image (optional)
                     dockerImage.tag("${env.DOCKER_IMAGE}:latest")
+
+                }
+            }
+       }
+
+}
