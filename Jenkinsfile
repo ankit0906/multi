@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'new_image'
+        DOCKER_IMAGE = 'python-image'
         DOCKERFILE = 'Dockerfile' 
         DOCKER_REGISTRY_CREDENTIALS = credentials('ankitdockerhub') 
     }
