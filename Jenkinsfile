@@ -3,8 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'python-image'
-        DOCKERFILE = 'Dockerfile' 
-        DOCKER_REGISTRY_CREDENTIALS = credentials('ankitdockerhub') 
+        DOCKERFILE = 'Dockerfile'  
     }
 
     stages {
