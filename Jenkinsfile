@@ -22,7 +22,7 @@ pipeline {
       
         stage('Run Unit Tests') {
             steps {
-                sh 'running unit tests'
+                sh 'running unit tests with python code'
             }
         }
     }
