@@ -15,21 +15,18 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                
                 sh 'yum install python -y'
-                sh 'yum install pip -y'
-                
+                sh 'yum install pip -y' 
             }
         }
       
         stage('Run Unit Tests') {
             steps {
-                
-                sh 'running unit test'
+                sh 'running unit tests'
             }
         }
     }
-       stage('Build Docker Image') {
+        stage('Build Docker Image') {
             steps {
                 script {
                     // Build the Docker image
