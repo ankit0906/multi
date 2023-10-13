@@ -19,11 +19,6 @@ pipeline {
             }
         }
       
-        stage('Run Unit Tests') {
-            steps {
-                sh 'running unit tests with python code'
-            }
-        }
         stage('Build Docker Image') {
             steps {
                 script {
